@@ -14,7 +14,7 @@ spec:
     spec: 
       containers: 
       - name: angular 
-        image: 180518/angular-app:v1 
+        image: angular-app-kubernetes:v1 
         ports: 
         - containerPort: 80 
 --- 
