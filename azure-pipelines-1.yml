@@ -41,7 +41,7 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         repository: $(imageRepository)
         command: 'buildAndPush'
-        Dockerfile: '**/dockerfile'
+        dockerfile: $(dockerfilePath)
         tags: |
           $(Build.BuildId)
           latest
