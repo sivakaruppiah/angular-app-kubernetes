@@ -38,7 +38,8 @@ stages:
 #        tags: |
 #          $(tag)
       inputs:
-        containerRegistry: $(dockerRegistryServiceConnection)
+        #containerRegistry: $(dockerRegistryServiceConnection)
+        azureSubscriptionEndpoint: 'AzureSC'
         repository: $(imageRepository)
         command: 'buildAndPush'
         dockerfile: $(dockerfilePath)
